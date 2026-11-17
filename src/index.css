@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --solen-ivory: #F6F4EF;
+    --solen-cream: #EAE6DE;
+    --solen-taupe: #B8AA98;
+    --solen-wood: #8B7055;
+    --solen-charcoal: #242421;
+    --solen-olive: #737767;
+    --solen-white: #FFFFFF;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #F6F4EF;
+    color: #242421;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom hairline scrollbars for subtle luxury feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EAE6DE;
+}
+::-webkit-scrollbar-thumb {
+  background: #B8AA98;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

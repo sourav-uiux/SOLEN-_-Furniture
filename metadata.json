@@ -1,0 +1,6 @@
+{
+  "name": "SOLEN — Architectural Furniture & 3D Showroom",
+  "description": "An immersive 3D luxury furniture showroom, interactive material customizer, and editorial e-commerce flagship.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
